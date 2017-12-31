@@ -4,8 +4,8 @@ LABEL maintainer="Robin Larsson <tankmaster93@gmail.com>"
 
 # https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#use-multi-stage-builds
 RUN apt-get update \
-    && apt-get dist-upgrade \
-    && apt-get install squid3 \
+    && apt-get dist-upgrade -y \
+    && apt-get install -y squid3 \
     && mv /etc/squid3/squid.conf /etc/squid3/squid.conf.dist
 
 ENV SQUID_CACHE_DIR=/var/spool/squid3 \
