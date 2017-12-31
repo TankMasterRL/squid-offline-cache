@@ -12,7 +12,7 @@ ENV SQUID_CACHE_DIR=/var/spool/squid3 \
     SQUID_LOG_DIR=/var/log/squid3 \
     SQUID_USER=proxy
 
-COPY squid.conf /etc/squid3/squid.conf
+COPY squid.conf /etc/squid/squid.conf
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 
