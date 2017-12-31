@@ -6,7 +6,7 @@ LABEL maintainer="Robin Larsson <tankmaster93@gmail.com>"
 RUN apt-get update \
     && apt-get dist-upgrade -y \
     && apt-get install -y squid3 \
-    && mv /etc/squid3/squid.conf /etc/squid3/squid.conf.dist
+    && mv /etc/squid/squid.conf /etc/squid/squid.conf.dist
 
 ENV SQUID_CACHE_DIR=/var/spool/squid3 \
     SQUID_LOG_DIR=/var/log/squid3 \
