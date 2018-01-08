@@ -1,0 +1,7 @@
+Squid:
+  image: gc7d2ih/squid-offline-cache:latest
+  ports:
+    - "3128:3128"
+  volumes:
+    - /srv/docker/squid/cache:/var/spool/squid3
+restart: always
