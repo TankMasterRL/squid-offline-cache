@@ -1,5 +1,8 @@
 # squid-offline-cache
 Offline web proxy cache by using Squid
+### Quick-start
+- docker-compose up -d
+- docker-compose stop Squid
 ### Features
 - Serve the recently cached content for a web page; if the web server is offline.
 - Only for HTTP communication
