@@ -8,8 +8,8 @@ RUN apt-get update \
     && apt-get install -y squid3 \
     && mv /etc/squid/squid.conf /etc/squid/squid.conf.dist
 
-ENV SQUID_CACHE_DIR=/var/spool/squid3 \
-    SQUID_LOG_DIR=/var/log/squid3 \
+ENV SQUID_CACHE_DIR=/var/spool/squid \
+    SQUID_LOG_DIR=/var/log/squid \
     SQUID_USER=proxy
 
 COPY squid.conf /etc/squid/squid.conf
