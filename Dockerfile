@@ -17,5 +17,6 @@ COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 
 EXPOSE 3128/tcp
+# https://docs.docker.com/compose/faq/#why-do-my-services-take-10-seconds-to-recreate-or-stop
 VOLUME ["${SQUID_CACHE_DIR}"]
 ENTRYPOINT ["/sbin/entrypoint.sh"]

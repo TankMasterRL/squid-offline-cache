@@ -1,4 +1,4 @@
-version: "3"
+version: "3.2"
 
 Squid:
   image: gc7d2ih/squid-offline-cache:latest
